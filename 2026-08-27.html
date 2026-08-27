@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球资产日报 2026-8-27</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f0f2f5;
+    color: #1a1a2e;
+    line-height: 1.7;
+    padding: 24px 16px;
+  }
+  .container { max-width: 880px; margin: 0 auto; }
+  .header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: #fff;
+    padding: 32px 36px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .header .label {
+    font-size: 12px;
+    color: #64748b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; position: relative; z-index: 1; }
+  .header .date { font-size: 14px; color: #94a3b8; position: relative; z-index: 1; }
+  .summary {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border-left: 4px solid #3b82f6;
+  }
+  .summary .tag {
+    display: inline-block;
+    font-size: 11px;
+    color: #3b82f6;
+    background: #eff6ff;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .summary ul { list-style: none; padding: 0; margin: 4px 0 0 0; }
+  .summary li {
+    font-size: 13.5px;
+    color: #475569;
+    padding: 7px 0;
+    border-bottom: 1px dashed #e2e8f0;
+    line-height: 1.6;
+  }
+  .summary li:last-child { border-bottom: none; }
+  .summary li strong { color: #1e293b; margin-right: 6px; font-weight: 600; }
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .card-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+  }
+  .card-header .date-tag {
+    font-size: 11px;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 3px 10px;
+    border-radius: 10px;
+  }
+  .card-comment {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border-left: 3px solid #cbd5e1;
+    line-height: 1.6;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+  th {
+    text-align: left;
+    padding: 9px 12px;
+    background: #f8fafc;
+    color: #64748b;
+    font-weight: 500;
+    font-size: 12px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+  }
+  th:nth-child(1), td:nth-child(1) { width: 30%; text-align: left; }
+  th:nth-child(2), td:nth-child(2) { width: 32%; text-align: left; }
+  th:nth-child(3), td:nth-child(3) { width: 22%; text-align: right; }
+  th:nth-child(4), td:nth-child(4) { width: 16%; text-align: right; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafbfc; }
+  .up { color: #dc2626; font-weight: 600; }
+  .down { color: #16a34a; font-weight: 600; }
+  .flat { color: #94a3b8; }
+  .code { color: #94a3b8; font-size: 12px; font-family: "SF Mono", Consolas, monospace; }
+  .note {
+    background: #fffbeb;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #92400e;
+    border-left: 3px solid #f59e0b;
+    line-height: 1.7;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
+    font-size: 11px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="label">GLOBAL ASSET DAILY</div>
+    <h1>🌍 全球资产日报</h1>
+    <div class="date">2026年8月27日 · 周四 · 共35个标的</div>
+  </div>
+
+  <div class="summary">
+    <span class="tag">今日概览</span>
+    <ul>
+      <li><strong>A股：</strong>三大指数集体大涨，科创50+3.77%领涨，沪指+1.13%，算力硬件、半导体芯片、农业板块爆发，英伟达财报超预期提振AI产业链</li>
+      <li><strong>亚太：</strong>日韩分化，日经225-0.20%，韩国KOSPI+1.53%，韩国央行连续第二次加息至3.00%</li>
+      <li><strong>美股：</strong>三大指数小幅收跌，道指-0.21%，纳指100+0.05%，英伟达盘后大涨超5%带动期货拉升</li>
+      <li><strong>债券/商品：</strong>美债ETF微跌，TLT-0.20%；COMEX黄金-0.99%、白银-0.87%，美元走强压制贵金属；布伦特原油-0.65%</li>
+      <li><strong>外汇：</strong>美元指数+0.25%收于99.165，美国7月PCE通胀高于预期推升加息押注</li>
+      <li><strong>核心驱动：</strong>英伟达二季度营收与指引双双超预期，盘后大涨带动全球AI产业链情绪；美国7月核心PCE同比3.3%符合预期但通胀仍高，美元走强压制贵金属</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>一、A股</h2>
+      <span class="date-tag">8月27日</span>
+    </div>
+    <div class="card-comment">A股三大指数集体大涨，科创50涨3.77%领涨，沪指涨1.13%报3956.57点，中证全指涨1.56%，创业板50涨1.40%。算力硬件、半导体芯片、农业板块集体爆发，存储芯片概念持续走高，PCB概念盘中涨势扩大。英伟达二季度业绩超预期提振AI产业链信心。恒生指数收跌0.34%，富时A50期指日盘涨0.55%。</div>
+    <table>
+      <thead><tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr></thead>
+      <tbody>
+        <tr><td>上证指数</td><td class="code">000001</td><td>3,956.57</td><td class="up">+1.13%</td></tr>
+        <tr><td>中证全指</td><td class="code">000985</td><td>5,958.93</td><td class="up">+1.56%</td></tr>
+        <tr><td>科创50</td><td class="code">000688</td><td>1,693.48</td><td class="up">+3.77%</td></tr>
+        <tr><td>创业板50</td><td class="code">399673</td><td>3,634.34</td><td class="up">+1.40%</td></tr>
+        <tr><td>恒生指数</td><td class="code">HSI</td><td>25,565.75</td><td class="down">-0.34%</td></tr>
+        <tr><td>富时A50期指</td><td class="code">CNWO</td><td>14,847.70</td><td class="up">+0.55%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>二、美股</h2>
+      <span class="date-tag">8月26日</span>
+    </div>
+    <div class="card-comment">美股三大指数小幅收跌，道指跌0.21%，标普500跌0.02%，纳斯达克综指跌0.08%，纳斯达克100微涨0.05%。科技板块分化，费城半导体SOXX涨0.26%，存储DRAM涨0.27%，中概互联网KWEB跌0.49%，中国半导体SMHC涨0.70%。英伟达盘后公布二季度业绩，营收与指引双双超预期，盘后大涨超5%，带动美股期货全线拉升。</div>
+    <table>
+      <thead><tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr></thead>
+      <tbody>
+        <tr><td>纳斯达克100</td><td class="code">NDX</td><td>29,224.52</td><td class="up">+0.05%</td></tr>
+        <tr><td>道琼斯</td><td class="code">DJIA</td><td>53,463.88</td><td class="down">-0.21%</td></tr>
+        <tr><td>费城半导体ETF</td><td class="code">SOXX</td><td>515.40</td><td class="up">+0.26%</td></tr>
+        <tr><td>存储ETF</td><td class="code">DRAM</td><td>56.39</td><td class="up">+0.27%</td></tr>
+        <tr><td>中概互联网ETF</td><td class="code">KWEB</td><td>26.28</td><td class="down">-0.49%</td></tr>
+        <tr><td>中国半导体ETF</td><td class="code">SMHC</td><td>46.11</td><td class="up">+0.70%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>三、亚太</h2>
+      <span class="date-tag">8月27日</span>
+    </div>
+    <div class="card-comment">亚太市场分化，日经225收跌0.20%报66131.98点，高开低走，存储芯片巨头铠侠上涨5%。韩国KOSPI收涨1.53%报6912.37点，韩国央行将基准利率从2.75%上调至3.00%，为连续第二次会议加息，符合市场预期。SK海力士盘中一度涨近6%，三星电子走强。</div>
+    <table>
+      <thead><tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr></thead>
+      <tbody>
+        <tr><td>日经225</td><td class="code">N225</td><td>66,131.98</td><td class="down">-0.20%</td></tr>
+        <tr><td>韩国KOSPI</td><td class="code">KS11</td><td>6,912.37</td><td class="up">+1.53%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>四、欧洲</h2>
+      <span class="date-tag">8月26日</span>
+    </div>
+    <div class="card-comment">欧洲三大股指涨跌不一，德国DAX涨0.08%报26285.96点，法国CAC40涨0.27%报8462.39点，英国富时100跌0.07%报10878.12点。欧洲股市整体表现平稳，投资者等待杰克逊霍尔全球央行年会信号。</div>
+    <table>
+      <thead><tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr></thead>
+      <tbody>
+        <tr><td>德国DAX</td><td class="code">GDAXI</td><td>26,285.96</td><td class="up">+0.08%</td></tr>
+        <tr><td>法国CAC40</td><td class="code">FCHI</td><td>8,462.39</td><td class="up">+0.27%</td></tr>
+        <tr><td>英国富时100</td><td class="code">FTSE</td><td>10,878.12</td><td class="down">-0.07%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>五、新兴市场</h2>
+      <span class="date-tag">8月25日</span>
+    </div>
+    <div class="card-comment">新兴市场ETF整体走强，巴西ETF涨1.70%领涨，印度基金LOF涨1.37%，沙特ETF涨0.52%。QDII基金净值T+1披露，以上为8月25日净值数据。大宗商品价格波动与全球风险偏好回升支撑新兴市场资产表现。</div>
+    <table>
+      <thead><tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr></thead>
+      <tbody>
+        <tr><td>沙特ETF</td><td class="code">520830</td><td>0.9283</td><td class="up">+0.52%</td></tr>
+        <tr><td>巴西ETF</td><td class="code">520870</td><td>1.0867</td><td class="up">+1.70%</td></tr>
+        <tr><td>印度基金LOF</td><td class="code">164824</td><td>1.3267</td><td class="up">+1.37%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>六、外汇</h2>
+      <span class="date-tag">8月26日</span>
+    </div>
+    <div class="card-comment">美元指数上涨0.25%收于99.165，美国7月PCE物价指数同比上涨3.7%高于市场预期，核心PCE同比3.3%符合预期，数据公布后利率期货市场对9月加息的定价由36%升至42%，美元走强。欧元/美元跌0.20%报1.1651，美元/日元微涨0.04%报159.29，美元/人民币跌0.04%报6.7205。</div>
+    <table>
+      <thead><tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr></thead>
+      <tbody>
+        <tr><td>美元指数</td><td class="code">UDI</td><td>99.165</td><td class="up">+0.25%</td></tr>
+        <tr><td>欧元/美元</td><td class="code">EURUSD</td><td>1.1651</td><td class="down">-0.20%</td></tr>
+        <tr><td>美元/人民币</td><td class="code">USDCNY</td><td>6.7205</td><td class="down">-0.04%</td></tr>
+        <tr><td>美元/日元</td><td class="code">USDJPY</td><td>159.29</td><td class="up">+0.04%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>七、债券</h2>
+      <span class="date-tag">8月26日</span>
+    </div>
+    <div class="card-comment">美债ETF微跌，美国7-10年国债ETF IEF跌0.20%，20年+国债ETF TLT跌0.20%。美国7月PCE通胀数据高于预期，美债收益率小幅上行压制债券价格。国内国债ETF小幅下跌，十年国债ETF净值135.736（-0.06%），30年国债ETF净值118.851（-0.14%）。</div>
+    <table>
+      <thead><tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr></thead>
+      <tbody>
+        <tr><td>美国7-10年国债ETF</td><td class="code">IEF</td><td>93.32</td><td class="down">-0.20%</td></tr>
+        <tr><td>美国20年+国债ETF</td><td class="code">TLT</td><td>83.30</td><td class="down">-0.20%</td></tr>
+        <tr><td>十年国债ETF</td><td class="code">511260</td><td>135.736</td><td class="down">-0.06%</td></tr>
+        <tr><td>30年国债ETF</td><td class="code">511090</td><td>118.851</td><td class="down">-0.14%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>八、REITs</h2>
+      <span class="date-tag">8月26-27日</span>
+    </div>
+    <div class="card-comment">REITs板块分化，美国REIT ETF RWR跌0.57%报114.62，受美债收益率上行压制。中证REITs全收益涨0.23%报958.80点，国内REITs市场小幅回暖，成交金额3.99亿元。</div>
+    <table>
+      <thead><tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr></thead>
+      <tbody>
+        <tr><td>美国REIT ETF</td><td class="code">RWR</td><td>114.62</td><td class="down">-0.57%</td></tr>
+        <tr><td>中证REITs全收益</td><td class="code">932047</td><td>958.80</td><td class="up">+0.23%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>九、商品</h2>
+      <span class="date-tag">8月26-27日</span>
+    </div>
+    <div class="card-comment">商品市场分化，国际油价小幅下跌，布伦特原油跌0.65%报86.70美元/桶，投资者减少油价中的风险溢价。贵金属承压下跌，COMEX黄金跌0.99%报4647.80美元/盎司，COMEX白银跌0.87%报68.08美元/盎司，美元走强与加息预期升温压制贵金属。国内商品期货涨跌不一，沪铜跌0.41%，豆粕涨1.60%，玉米涨0.26%。</div>
+    <table>
+      <thead><tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr></thead>
+      <tbody>
+        <tr><td>布伦特原油连续</td><td class="code">XBZY0</td><td>86.70</td><td class="down">-0.65%</td></tr>
+        <tr><td>COMEX黄金</td><td class="code">GCY0</td><td>4,647.80</td><td class="down">-0.99%</td></tr>
+        <tr><td>COMEX白银</td><td class="code">SIY0</td><td>68.08</td><td class="down">-0.87%</td></tr>
+        <tr><td>沪铜连续</td><td class="code">cu0001</td><td>108,300</td><td class="down">-0.41%</td></tr>
+        <tr><td>豆粕连续</td><td class="code">m0001</td><td>3,297</td><td class="up">+1.60%</td></tr>
+        <tr><td>玉米连续</td><td class="code">c0001</td><td>2,287</td><td class="up">+0.26%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>十、加密货币</h2>
+      <span class="date-tag">8月26日</span>
+    </div>
+    <div class="card-comment">比特币ETF ARKB微跌0.53%报26.03美元，加密资产整体平稳。美元走强与风险偏好变化对加密货币形成一定压制，但英伟达业绩超预期可能带动科技风险偏好回升。</div>
+    <table>
+      <thead><tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr></thead>
+      <tbody>
+        <tr><td>比特币ETF</td><td class="code">ARKB</td><td>26.03</td><td class="down">-0.53%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    数据说明：美股、欧洲、美国REIT、美债ETF、比特币ETF、布伦特原油、COMEX黄金白银、美元指数为8月26日收盘；A股、亚太、中证REITs、国内商品为8月27日数据；富时A50期指为日盘收盘价（16:30结算）；国内债券ETF和QDII LOF（沙特/巴西/印度）为基金单位净值，QDII净值通常T+1披露（8月25日净值）。
+  </div>
+
+  <div class="footer">
+    全球资产日报 · 2026年8月27日 · 35个标的 · 自动生成
+  </div>
+</div>
+</body>
+</html>
