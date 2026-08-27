@@ -9,9 +9,11 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
     background: #f0f2f5;
-    color: #1a1a2e;
-    line-height: 1.7;
+    color: #1a1a1a;
+    font-size: 17px;
+    line-height: 1.9;
     padding: 24px 16px;
+    -webkit-font-smoothing: antialiased;
   }
   .container { max-width: 880px; margin: 0 auto; }
   .header {
@@ -62,14 +64,14 @@
   }
   .summary ul { list-style: none; padding: 0; margin: 4px 0 0 0; }
   .summary li {
-    font-size: 13.5px;
-    color: #475569;
-    padding: 7px 0;
+    font-size: 15px;
+    color: #1a1a1a;
+    padding: 10px 0;
     border-bottom: 1px dashed #e2e8f0;
-    line-height: 1.6;
+    line-height: 1.9;
   }
   .summary li:last-child { border-bottom: none; }
-  .summary li strong { color: #1e293b; margin-right: 6px; font-weight: 600; }
+  .summary li strong { color: #1a1a1a; margin-right: 6px; font-weight: 700; }
   .card {
     background: #fff;
     border-radius: 14px;
@@ -86,9 +88,9 @@
     border-bottom: 1px solid #e2e8f0;
   }
   .card-header h2 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #1e293b;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
   }
   .card-header .date-tag {
     font-size: 11px;
@@ -98,31 +100,34 @@
     border-radius: 10px;
   }
   .card-comment {
-    font-size: 13px;
-    color: #64748b;
+    font-size: 15px;
+    color: #333;
     margin-bottom: 14px;
-    padding: 10px 14px;
+    padding: 12px 14px;
     background: #f8fafc;
+    border-left: 3px solid #3b82f6;
+    line-height: 1.9;
+  }
     border-radius: 8px;
     border-left: 3px solid #cbd5e1;
     line-height: 1.6;
   }
-  table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; table-layout: fixed; }
   th {
     text-align: left;
-    padding: 9px 12px;
-    background: #f8fafc;
-    color: #64748b;
-    font-weight: 500;
-    font-size: 12px;
+    padding: 10px 12px;
+    background: #1e3a5f;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
     border-bottom: 1px solid #e2e8f0;
   }
   td {
-    padding: 9px 12px;
+    padding: 10px 12px;
     border-bottom: 1px solid #f1f5f9;
-    color: #334155;
+    color: #1a1a1a;
   }
-  th:nth-child(1), td:nth-child(1) { width: 30%; text-align: left; }
+  th:nth-child(1), td:nth-child(1) { width: 30%; text-align: left; font-weight: 700; }
   th:nth-child(2), td:nth-child(2) { width: 32%; text-align: left; }
   th:nth-child(3), td:nth-child(3) { width: 22%; text-align: right; }
   th:nth-child(4), td:nth-child(4) { width: 16%; text-align: right; }
