@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球资产日报 · 2026年9月4日</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #f0f2f5;
+    color: #1a1a2e;
+    line-height: 1.7;
+    padding: 24px 16px;
+}
+.header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
+    border-radius: 16px;
+    padding: 28px 20px;
+    margin-bottom: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(15,23,42,0.3);
+}
+.header .label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.header .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.header .date {
+    font-size: 13px;
+    color: #cbd5e1;
+}
+.summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+    border-left: 4px solid #2563eb;
+}
+.summary .sum-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+.summary ul { list-style: none; }
+.summary li {
+    font-size: 13px;
+    color: #334155;
+    padding: 6px 0;
+    border-bottom: 1px dashed #e2e8f0;
+}
+.summary li:last-child { border-bottom: none; }
+.summary li strong { color: #1e293b; }
+.category {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.cat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.cat-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+.cat-date {
+    font-size: 11px;
+    color: #94a3b8;
+    background: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+.cat-comment {
+    font-size: 12px;
+    color: #64748b;
+    background: #f8fafc;
+    border-left: 3px solid #cbd5e1;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    border-radius: 0 6px 6px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+th {
+    font-size: 11px;
+    color: #64748b;
+    background: #f8fafc;
+    padding: 8px 6px;
+    text-align: left;
+    font-weight: 600;
+}
+th:nth-child(3), th:nth-child(4) { text-align: right; }
+td {
+    font-size: 13px;
+    padding: 9px 6px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #1e293b;
+}
+td:nth-child(3), td:nth-child(4) { text-align: right; }
+td.code {
+    font-family: "SF Mono", "Monaco", "Consolas", monospace;
+    font-size: 11px;
+    color: #94a3b8;
+}
+tr:last-child td { border-bottom: none; }
+.up { color: #dc2626; }
+.down { color: #16a34a; }
+.flat { color: #64748b; }
+.bold { font-weight: 700; }
+.footer-note {
+    background: #fef9c3;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-top: 16px;
+    font-size: 11px;
+    color: #713f12;
+    line-height: 1.8;
+}
+.footer-note .footer-main {
+    font-size: 12px;
+    font-weight: 600;
+    color: #713f12;
+    margin-top: 6px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="label">GLOBAL ASSET DAILY</div>
+    <div class="title">🌍 全球资产日报</div>
+    <div class="date">2026年9月4日 · 周五 · 共38个标的</div>
+</div>
+
+<div class="summary">
+    <div class="sum-title">📊 今日概览</div>
+    <ul>
+        <li><strong>A股：</strong>三大指数冲高回落集体收跌，科创50大跌2.10%领跌，猪肉白酒板块逆势上涨</li>
+        <li><strong>美股：</strong>三大指数集体大涨终结连跌，道指+1.14%，纳指100+1.16%，比特币ETF暴涨+5.81%</li>
+        <li><strong>亚太：</strong>日韩股市集体收涨，日经225+1.26%，韩国KOSPI+1.64%，半导体权重股反弹</li>
+        <li><strong>欧洲：</strong>三大指数集体收涨，德国DAX+0.63%，英国富时100+0.70%，美债收益率回落提振</li>
+        <li><strong>商品：</strong>COMEX黄金大涨+2.83%，白银+2.51%，美联储官员鸽派言论提振贵金属</li>
+        <li><strong>外汇：</strong>美元指数大跌-0.69%，美元/日元暴跌-1.84%，非美货币集体反弹</li>
+    </ul>
+</div>
+
+<div class="category">
+    <div class="cat-header">
+        <div class="cat-title">一、A股</div>
+        <div class="cat-date">9月4日</div>
+    </div>
+    <div class="cat-comment">A股冲高回落集体收跌，科创50大跌2.10%领跌宽基，半导体产业链走弱，猪肉白酒板块逆势上涨。</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:30%">标的名称</th>
+                <th style="width:32%">代码</th>
+                <th style="width:22%">现价</th>
+                <th style="width:16%">涨跌幅</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>上证指数</td>
+                <td class="code">000001</td>
+                <td>3930.12</td>
+                <td class="down ">-0.30%</td>
+            </tr>
+            <tr>
+                <td>中证全指</td>
+                <td class="code">000985</td>
+                <td>5830.14</td>
+                <td class="down ">-0.63%</td>
+            </tr>
+            <tr>
+                <td>科创50</td>
+                <td class="code">000688</td>
+                <td>1577.36</td>
+                <td class="down bold">-2.10%</td>
+            </tr>
+            <tr>
+                <td>创业板50</td>
+                <td class="code">399673</td>
+                <td>3430.16</td>
+                <td class="down ">-0.57%</td>
+            </tr>
+            <tr>
+                <td>恒生指数</td>
+                <td class="code">HSI</td>
+                <td>25650.87</td>
+                <td class="up ">+1.74%</td>
+            </tr>
+            <tr>
+                <td>富时A50</td>
+                <td class="code">CNWO</td>
+                <td>14674.58</td>
+                <td class="up ">+0.36%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="category">
+    <div class="cat-header">
+        <div class="cat-title">二、美股</div>
+        <div class="cat-date">9月3日</div>
+    </div>
+    <div class="cat-comment">美股三大指数集体大涨终结连跌，道指涨超1%，美联储官员鸽派言论提振市场情绪，比特币ETF暴涨近6%。</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:30%">标的名称</th>
+                <th style="width:32%">代码</th>
+                <th style="width:22%">现价</th>
+                <th style="width:16%">涨跌幅</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>纳斯达克100</td>
+                <td class="code">NDX</td>
+                <td>29482.32</td>
+                <td class="up ">+1.16%</td>
+            </tr>
+            <tr>
+                <td>道琼斯</td>
+                <td class="code">DJIA</td>
+                <td>53666.00</td>
+                <td class="up ">+1.14%</td>
+            </tr>
+            <tr>
+                <td>费城半导体ETF</td>
+                <td class="code">SOXX</td>
+                <td>502.20</td>
+                <td class="up ">+0.15%</td>
+            </tr>
+            <tr>
+                <td>存储ETF</td>
+                <td class="code">DRAM</td>
+                <td>55.99</td>
+                <td class="down ">-0.39%</td>
+            </tr>
+            <tr>
+                <td>中概互联网ETF</td>
+                <td class="code">KWEB</td>
+                <td>25.54</td>
+                <td class="down ">-0.62%</td>
+            </tr>
+            <tr>
+                <td>中国半导体ETF</td>
+                <td class="code">SMHC</td>
+                <td>45.28</td>
+                <td class="down ">-0.97%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="category">
+    <div class="cat-header">
+        <div class="cat-title">三、亚太</div>
+        <div class="cat-date">9月4日</div>
+    </div>
+    <div class="cat-comment">日韩股市集体收涨，半导体权重股反弹，SK海力士涨超3%，三星电子涨2%，软银大涨近12%。</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:30%">标的名称</th>
+                <th style="width:32%">代码</th>
+                <th style="width:22%">现价</th>
+                <th style="width:16%">涨跌幅</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>日经225</td>
+                <td class="code">N225</td>
+                <td>65020.94</td>
+                <td class="up ">+1.26%</td>
+            </tr>
+            <tr>
+                <td>韩国KOSPI</td>
+                <td class="code">KS11</td>
+                <td>6687.21</td>
+                <td class="up ">+1.64%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="category">
+    <div class="cat-header">
+        <div class="cat-title">四、欧洲</div>
+        <div class="cat-date">9月3日</div>
+    </div>
+    <div class="cat-comment">欧洲三大指数集体收涨，美债收益率回落提振风险资产，英国10年期金边债收益率从高位回落。</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:30%">标的名称</th>
+                <th style="width:32%">代码</th>
+                <th style="width:22%">现价</th>
+                <th style="width:16%">涨跌幅</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>德国<br>DAX</td>
+                <td class="code">GDAXI</td>
+                <td>26003.32</td>
+                <td class="up ">+0.63%</td>
+            </tr>
+            <tr>
+                <td>法国CAC40</td>
+                <td class="code">FCHI</td>
+                <td>8286.40</td>
+                <td class="up ">+0.07%</td>
+            </tr>
+            <tr>
+                <td>英国富时100</td>
+                <td class="code">FTSE</td>
+                <td>10831.52</td>
+                <td class="up ">+0.70%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="category">
+    <div class="cat-header">
+        <div class="cat-title">五、新兴市场</div>
+        <div class="cat-date">9月2日净值</div>
+    </div>
+    <div class="cat-comment">QDII基金净值，巴西ETF大涨近4%，沙特和印度小幅调整。</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:30%">标的名称</th>
+                <th style="width:32%">代码</th>
+                <th style="width:22%">现价</th>
+                <th style="width:16%">涨跌幅</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>沙特ETF</td>
+                <td class="code">520830</td>
+                <td>0.9076</td>
+                <td class="down ">-0.80%</td>
+            </tr>
+            <tr>
+                <td>巴西ETF</td>
+                <td class="code">520870</td>
+                <td>1.1598</td>
+                <td class="up bold">+3.76%</td>
+            </tr>
+            <tr>
+                <td>印度LOF</td>
+                <td class="code">164824</td>
+                <td>1.3177</td>
+                <td class="up ">+0.30%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="category">
+    <div class="cat-header">
+        <div class="cat-title">六、外汇</div>
+        <div class="cat-date">9月3-4日</div>
+    </div>
+    <div class="cat-comment">美元指数大跌0.69%，非美货币集体反弹，美元/日元暴跌近2%，日元急升。</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:30%">标的名称</th>
+                <th style="width:32%">代码</th>
+                <th style="width:22%">现价</th>
+                <th style="width:16%">涨跌幅</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>美元指数</td>
+                <td class="code">UDI</td>
+                <td>98.910</td>
+                <td class="down ">-0.69%</td>
+            </tr>
+            <tr>
+                <td>欧元/美元</td>
+                <td class="code">EURUSD</td>
+                <td>1.1635</td>
+                <td class="up ">+0.42%</td>
+            </tr>
+            <tr>
+                <td>美元/RMB</td>
+                <td class="code">USDCNY</td>
+                <td>6.7108</td>
+                <td class="down ">-0.11%</td>
+            </tr>
+            <tr>
+                <td>美元/日元</td>
+                <td class="code">USDJPY</td>
+                <td>155.81</td>
+                <td class="down ">-1.84%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="category">
+    <div class="cat-header">
+        <div class="cat-title">七、债券</div>
+        <div class="cat-date">9月3日</div>
+    </div>
+    <div class="cat-comment">美债收益率回落，美债ETF小幅收涨；国内债券ETF微涨，30年国债ETF涨0.30%。</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:30%">标的名称</th>
+                <th style="width:32%">代码</th>
+                <th style="width:22%">现价</th>
+                <th style="width:16%">涨跌幅</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>美国7-10年国债ETF</td>
+                <td class="code">IEF</td>
+                <td>92.28</td>
+                <td class="up ">+0.11%</td>
+            </tr>
+            <tr>
+                <td>美国20年+国债ETF</td>
+                <td class="code">TLT</td>
+                <td>82.07</td>
+                <td class="up ">+0.15%</td>
+            </tr>
+            <tr>
+                <td>美国30年国债ETF</td>
+                <td class="code">UTHY</td>
+                <td>38.72</td>
+                <td class="up ">+0.14%</td>
+            </tr>
+            <tr>
+                <td>十年国债ETF</td>
+                <td class="code">511260</td>
+                <td>135.861</td>
+                <td class="up ">+0.06%</td>
+            </tr>
+            <tr>
+                <td>30年国债ETF</td>
+                <td class="code">511090</td>
+                <td>118.9973</td>
+                <td class="up ">+0.30%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="category">
+    <div class="cat-header">
+        <div class="cat-title">八、REITs</div>
+        <div class="cat-date">9月3-4日</div>
+    </div>
+    <div class="cat-comment">美国REIT ETF小幅收涨，中证REITs全收益指数微涨0.38%。</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:30%">标的名称</th>
+                <th style="width:32%">代码</th>
+                <th style="width:22%">现价</th>
+                <th style="width:16%">涨跌幅</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>美国REIT ETF</td>
+                <td class="code">RWR</td>
+                <td>112.05</td>
+                <td class="up ">+0.38%</td>
+            </tr>
+            <tr>
+                <td>中证REITs全收益</td>
+                <td class="code">932047</td>
+                <td>940.78</td>
+                <td class="up ">+0.38%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="category">
+    <div class="cat-header">
+        <div class="cat-title">九、商品</div>
+        <div class="cat-date">9月3-4日</div>
+    </div>
+    <div class="cat-comment">COMEX黄金大涨2.83%，白银涨2.51%，美联储官员鸽派言论提振贵金属；布伦特原油微涨0.30%。</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:30%">标的名称</th>
+                <th style="width:32%">代码</th>
+                <th style="width:22%">现价</th>
+                <th style="width:16%">涨跌幅</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>布伦特原油连续</td>
+                <td class="code">XBZY0</td>
+                <td>95.92</td>
+                <td class="up ">+0.30%</td>
+            </tr>
+            <tr>
+                <td>COMEX黄金</td>
+                <td class="code">GCY0</td>
+                <td>4510.00</td>
+                <td class="up bold">+2.83%</td>
+            </tr>
+            <tr>
+                <td>COMEX白银</td>
+                <td class="code">SIY0</td>
+                <td>67.585</td>
+                <td class="up bold">+2.51%</td>
+            </tr>
+            <tr>
+                <td>沪铜连续</td>
+                <td class="code">cu0001</td>
+                <td>109110</td>
+                <td class="up ">+0.53%</td>
+            </tr>
+            <tr>
+                <td>豆粕连续</td>
+                <td class="code">m0001</td>
+                <td>3423</td>
+                <td class="up ">+1.09%</td>
+            </tr>
+            <tr>
+                <td>玉米连续</td>
+                <td class="code">c0001</td>
+                <td>2303</td>
+                <td class="down ">-0.13%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="category">
+    <div class="cat-header">
+        <div class="cat-title">十、加密货币</div>
+        <div class="cat-date">9月3日</div>
+    </div>
+    <div class="cat-comment">比特币ETF暴涨5.81%，加密货币市场强势反弹。</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:30%">标的名称</th>
+                <th style="width:32%">代码</th>
+                <th style="width:22%">现价</th>
+                <th style="width:16%">涨跌幅</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>比特币ETF</td>
+                <td class="code">ARKB</td>
+                <td>27.12</td>
+                <td class="up bold">+5.81%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="footer-note">
+    数据说明：美股、欧洲、美国REIT、美国国债ETF、比特币ETF、COMEX黄金白银、布伦特原油、美元指数因时区差异为前一交易日收盘价；国内债券ETF和QDII LOF为基金单位净值，QDII净值通常T+1披露；富时A50为日盘收盘价（16:30结算）。
+    <div class="footer-main">全球资产日报 · 2026年9月4日 · 38个标的 · 由AI生成</div>
+</div>
+
+</body>
+</html>
