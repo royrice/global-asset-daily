@@ -51,14 +51,11 @@ body {
   border-left: 4px solid #3b82f6;
 }
 .summary .tag {
-  display: inline-block;
-  font-size: 11px;
-  color: #3b82f6;
-  background: #eff6ff;
-  padding: 3px 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  font-weight: 600;
+  display: block;
+  font-size: 17px;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 .summary ul { list-style: none; padding: 0; margin: 4px 0 0 0; }
 .summary li {
@@ -124,10 +121,10 @@ td {
 }
 th:nth-child(1), td:nth-child(1) { width: 30%; text-align: left; }
 th:nth-child(2), td:nth-child(2) { width: 26%; text-align: left; }
-th:nth-child(3) { width: 20%; }
-td:nth-child(3) { width: 20%; text-align: right; }
-th:nth-child(4) { width: 24%; }
-td:nth-child(4) { width: 24%; text-align: right; }
+th:nth-child(3) { width: 24%; text-align: left; }
+td:nth-child(3) { width: 24%; text-align: left; }
+th:nth-child(4) { width: 20%; text-align: center; }
+td:nth-child(4) { width: 20%; text-align: right; font-variant-numeric: tabular-nums; }
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: #fafbfc; }
 .up { color: #dc2626; font-weight: 600; }
@@ -358,7 +355,7 @@ tr:hover td { background: #fafbfc; }
 <div class="card">
   <div class="card-header">
     <h2>五、新兴市场</h2>
-    <div class="date-tag">9月3日净值</div>
+    <div class="date-tag">9月3日</div>
   </div>
   <div class="card-comment">新兴市场ETF涨跌互现，巴西ETF涨0.16%，沙特ETF涨0.13%，印度LOF微跌0.06%（T+1净值）。</div>
   <table>
