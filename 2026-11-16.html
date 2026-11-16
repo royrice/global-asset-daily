@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球资产日报 2026年11月16日</title>
+<style>
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f0f2f5;
+  color: #1a1a2e;
+  line-height: 1.7;
+  padding: 24px 16px;
+  overflow-wrap: break-word;
+}
+.container { max-width: 880px; margin: 0 auto; }
+.header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  color: #fff;
+  padding: 32px 36px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.header .label {
+  font-size: 12px;
+  color: #64748b;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.header h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; position: relative; z-index: 1; }
+.header .date { font-size: 14px; color: #94a3b8; position: relative; z-index: 1; }
+.summary {
+  word-break: break-all;
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border-left: 4px solid #3b82f6;
+}
+.summary .tag {
+  display: block;
+  font-size: 17px;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.summary ul { list-style: none; padding: 0; margin: 4px 0 0 0; }
+.summary li {
+  font-size: 13.5px;
+  color: #475569;
+  padding: 7px 0;
+  border-bottom: 1px dashed #e2e8f0;
+  line-height: 1.6;
+}
+.summary li:last-child { border-bottom: none; }
+.summary li strong { color: #1e293b; margin-right: 6px; font-weight: 700; }
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 26px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.card-header h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+}
+.card-header .date-tag {
+  font-size: 11px;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+.card-comment {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 3px solid #cbd5e1;
+  line-height: 1.6;
+}
+table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+th {
+  text-align: left;
+  padding: 9px 12px;
+  background: #f8fafc;
+  color: #64748b;
+  font-weight: 500;
+  font-size: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+td {
+  padding: 9px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+th:nth-child(1), td:nth-child(1) { width: 30%; text-align: left; line-height: 1.4; }
+th:nth-child(2), td:nth-child(2) { width: 26%; text-align: left; }
+th:nth-child(3) { width: 24%; text-align: left; }
+td:nth-child(3) { width: 24%; text-align: left; white-space: nowrap; }
+th:nth-child(4) { width: 20%; text-align: center; }
+td:nth-child(4) { width: 20%; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafbfc; }
+.up { color: #dc2626; font-weight: 600; }
+.down { color: #16a34a; font-weight: 600; }
+.flat { color: #94a3b8; }
+.code { color: #94a3b8; font-size: 12px; font-family: "SF Mono", Consolas, monospace; }
+.us-table tr { height: 50px; }
+.us-table td { height: 50px; vertical-align: middle; }
+.note {
+  word-break: break-all;
+  background: #fffbeb;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #92400e;
+  border-left: 3px solid #f59e0b;
+  line-height: 1.7;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="label">GLOBAL ASSET DAILY</div>
+    <h1>🌍 全球资产日报</h1>
+    <div class="date">2026年11月16日 · 周一 · 共38个标的</div>
+  </div>
+
+  <div class="summary">
+    <span class="tag">今日概览</span>
+    <ul>
+      <li><strong>A股</strong>沪指跌0.87%守住3600点，创业板50重挫4.93%、科创50跌5.16%，成交1.49万亿继续缩量，银行煤炭逆势红</li>
+      <li><strong>亚太</strong>日经225跌2.42%失守60000点，KOSPI重挫3.59%，SK海力士跌7.89%拖累韩股；恒指逆势涨0.49%</li>
+      <li><strong>美股</strong>11月13日道指微涨0.10%、纳指100重挫2.07%，费半ETF跌3.65%、芯片与AI硬件继续遭抛售</li>
+      <li><strong>债券/商品</strong>美债ETF续跌，布油结算价95.84基本持平全周跌2.52%，COMEX金周跌4.60%、银跌破49美元</li>
+      <li><strong>外汇</strong>美元指数涨0.23%至103.412创19个月新高，欧元跌至1.1023创近20个月低位，在岸人民币升29点</li>
+      <li><strong>核心驱动</strong>美国10月PPI超预期强化12月加息，利率上行杀估值，全球算力芯片重挫，资金转投银行红利防御股</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>一、A股</h2>
+      <span class="date-tag">11月16日</span>
+    </div>
+    <div class="card-comment">沪指跌0.87%守住3600点，创业板50重挫4.93%、科创50跌5.16%，通信电子领跌，仅银行煤炭红利逆势收红；成交1.49万亿元继续缩量，4344只个股下跌</div>
+    <table>
+      <tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr>
+      <tr><td>上证指数</td><td class="code">000001</td><td>3,602.57</td><td class="down">-0.87%</td></tr>
+      <tr><td>中证全指</td><td class="code">000985</td><td>4,959.10</td><td class="down">-1.96%</td></tr>
+      <tr><td>科创50</td><td class="code">000688</td><td>1,213.68</td><td class="down">-5.16%</td></tr>
+      <tr><td>创业板50</td><td class="code">399673</td><td>2,302.46</td><td class="down">-4.93%</td></tr>
+      <tr><td>恒生指数</td><td class="code">HSI</td><td>23,753.84</td><td class="up">+0.49%</td></tr>
+      <tr><td>富时A50</td><td class="code">CNWO</td><td>12,780.69</td><td class="down">-0.95%</td></tr>
+      </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>二、美股</h2>
+      <span class="date-tag">11月13日</span>
+    </div>
+    <div class="card-comment">三大指数分化，道指微涨0.10%创新高附近，纳指100重挫2.07%；英伟达再跌2%、AMD与博通大幅走弱，半导体与AI硬件继续遭抛售，必需消费与能源逆势走强</div>
+    <table class="us-table">
+      <tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr>
+      <tr><td>纳斯达克</td><td class="code">NDX</td><td>27,703.96</td><td class="down">-2.07%</td></tr>
+      <tr><td>道琼斯</td><td class="code">DJIA</td><td>52,347.55</td><td class="up">+0.10%</td></tr>
+      <tr><td>费城半导体ETF</td><td class="code">SOXX</td><td>149.30</td><td class="down">-3.65%</td></tr>
+      <tr><td>存储ETF</td><td class="code">DRAM</td><td>42.40</td><td class="down">-2.90%</td></tr>
+      <tr><td>中概互联网ETF</td><td class="code">KWEB</td><td>22.93</td><td class="up">+0.09%</td></tr>
+      <tr><td>中国半导体ETF</td><td class="code">SMHC</td><td>33.6377</td><td class="down">-4.71%</td></tr>
+      </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>三、亚太</h2>
+      <span class="date-tag">11月16日</span>
+    </div>
+    <div class="card-comment">日经225大跌2.42%跌破60000点报59662.02，KOSPI重挫3.59%报5100.50；SK海力士跌7.89%、三星电子跌4.47%，存储双雄午后跳水拖累韩股</div>
+    <table>
+      <tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr>
+      <tr><td>日经225</td><td class="code">N225</td><td>59,662.02</td><td class="down">-2.42%</td></tr>
+      <tr><td>韩国KOSPI</td><td class="code">KS11</td><td>5,100.50</td><td class="down">-3.59%</td></tr>
+      </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>四、欧洲</h2>
+      <span class="date-tag">11月13日</span>
+    </div>
+    <div class="card-comment">欧洲三大股指窄幅分化，富时100涨0.36%领涨、CAC40涨0.09%，DAX微跌0.08%；科技股权重低使欧股抗跌，全周STOXX600仍涨逾2%</div>
+    <table>
+      <tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr>
+      <tr><td>德国<br>DAX</td><td class="code">GDAXI</td><td>26,749.95</td><td class="down">-0.08%</td></tr>
+      <tr><td>法国CAC40</td><td class="code">FCHI</td><td>8,368.91</td><td class="up">+0.09%</td></tr>
+      <tr><td>英国<br>富时100</td><td class="code">FTSE</td><td>10,902.56</td><td class="up">+0.36%</td></tr>
+      </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>五、新兴市场</h2>
+      <span class="date-tag">11月12日</span>
+    </div>
+    <div class="card-comment">三国基金走势分化，沙特ETF微涨0.12%，巴西ETF跌1.64%回吐前日涨幅，印度LOF跌0.08%基本走平</div>
+    <table>
+      <tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr>
+      <tr><td>沙特ETF</td><td class="code">520830</td><td>0.8484</td><td class="up">+0.12%</td></tr>
+      <tr><td>巴西ETF</td><td class="code">520870</td><td>0.9660</td><td class="down">-1.64%</td></tr>
+      <tr><td>印度LOF</td><td class="code">164824</td><td>1.3399</td><td class="down">-0.08%</td></tr>
+      </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>六、外汇</h2>
+      <span class="date-tag">11月13-16日</span>
+    </div>
+    <div class="card-comment">美元指数涨0.23%至103.412续创19个月新高，欧元跌至1.1023创2025年4月以来最低；日元159.78逼近160干预关口；在岸人民币收6.6678升29点</div>
+    <table>
+      <tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr>
+      <tr><td>美元指数</td><td class="code">DXY</td><td>103.412</td><td class="up">+0.23%</td></tr>
+      <tr><td>欧元/美元</td><td class="code">EURUSD</td><td>1.1023</td><td class="down">-0.30%</td></tr>
+      <tr><td>美元/RMB</td><td class="code">USDCNY</td><td>6.6678</td><td class="down">-0.04%</td></tr>
+      <tr><td>美元/日元</td><td class="code">USDJPY</td><td>159.78</td><td class="down">-0.03%</td></tr>
+      </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>七、债券</h2>
+      <span class="date-tag">11月13日</span>
+    </div>
+    <div class="card-comment">美债ETF继续小幅下跌，TLT跌0.43%、UTHY跌0.45%，10月PPI超预期推升12月加息押注，两年期美债收益率一周累升32个基点至4.84%；国内债券ETF同步走弱</div>
+    <table>
+      <tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr>
+      <tr><td>美国7-10年国债ETF</td><td class="code">IEF</td><td>90.04</td><td class="down">-0.19%</td></tr>
+      <tr><td>美国20年+国债ETF</td><td class="code">TLT</td><td>79.38</td><td class="down">-0.43%</td></tr>
+      <tr><td>美国30年国债ETF</td><td class="code">UTHY</td><td>37.4962</td><td class="down">-0.45%</td></tr>
+      <tr><td>十年国债ETF</td><td class="code">511260</td><td>135.791</td><td class="down">-0.10%</td></tr>
+      <tr><td>30年国债ETF</td><td class="code">511090</td><td>120.7439</td><td class="down">-0.36%</td></tr>
+      </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>八、REITs</h2>
+      <span class="date-tag">11月13-16日</span>
+    </div>
+    <div class="card-comment">美国REIT ETF微跌0.07%基本持平，中证REITs全收益跌0.50%报926.19，创近52周低位区间，产权类REITs回调明显</div>
+    <table>
+      <tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr>
+      <tr><td>美国REIT ETF</td><td class="code">RWR</td><td>111.59</td><td class="down">-0.07%</td></tr>
+      <tr><td>中证REITs全收益</td><td class="code">932047</td><td>926.19</td><td class="down">-0.50%</td></tr>
+      </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>九、商品</h2>
+      <span class="date-tag">11月13-16日</span>
+    </div>
+    <div class="card-comment">布伦特结算价95.84美元基本持平，全周跌2.52%连续两周走低；COMEX金微涨0.06%但周跌4.60%，银跌2.83%跌破49美元；国内商品普跌，豆粕跌1.33%领跌</div>
+    <table>
+      <tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr>
+      <tr><td>布伦特油</td><td class="code">BRN0W</td><td>95.84</td><td class="up">+0.02%</td></tr>
+      <tr><td>COMEX金</td><td class="code">GCY0</td><td>3,887.60</td><td class="up">+0.06%</td></tr>
+      <tr><td>COMEX银</td><td class="code">SIY0</td><td>48.65</td><td class="down">-2.83%</td></tr>
+      <tr><td>沪铜连续</td><td class="code">cu0001</td><td>104,090</td><td class="down">-1.01%</td></tr>
+      <tr><td>豆粕连续</td><td class="code">m0001</td><td>3,105</td><td class="down">-1.33%</td></tr>
+      <tr><td>玉米连续</td><td class="code">c0001</td><td>2,174</td><td class="down">-0.50%</td></tr>
+      </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>十、加密货币</h2>
+      <span class="date-tag">11月13日</span>
+    </div>
+    <div class="card-comment">比特币ETF跌3.64%报22.79，比特币跌4.73%至68126美元，以太坊跌5.02%，风险偏好回落压制高波动资产</div>
+    <table>
+      <tr><th>标的名称</th><th>代码</th><th>现价</th><th>涨跌幅</th></tr>
+      <tr><td>比特币ETF</td><td class="code">ARKB</td><td>22.79</td><td class="down">-3.64%</td></tr>
+      </table>
+  </div>
+
+  <div class="note">
+    数据说明：A股、亚太、恒生、富时A50、中证REITs、在岸人民币（16:30）及国内商品为11月16日收盘；美股、欧洲、美债ETF、美国REIT、国际商品（布油/COMEX金银）、比特币ETF、美元指数及主要货币对为11月13日收盘；QDII基金（沙特/巴西/印度）为11月12日单位净值，国内债券ETF为11月13日单位净值（T+1披露）；富时A50为指数现货收盘。
+  </div>
+
+  <div class="footer">全球资产日报 · 2026年11月16日 · 38个标的 · 由AI生成</div>
+</div>
+</body>
+</html>
